@@ -1,0 +1,64 @@
+@import "@/styles/_variables.scss";
+.application {
+  background: #fff;
+}
+.nav-link {
+  margin: 0 10px;
+}
+.app-container {
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: $font-primary;
+  .post-wrapper {
+    margin-bottom: 25px;
+    .post-featured-image {
+      max-height: 200px;
+      width: 100%;
+      .v-lazy-image {
+        filter: blur(10px);
+        transition: filter 0.7s;
+      }
+      .v-lazy-image-loaded {
+        width: 100%;
+        filter: blur(0);
+      }
+    }
+
+    .post-content {
+      padding: 20px;
+      font-size: $font-size-post;
+      line-height: 28px;
+
+      -webkit-box-shadow: -1px 6px 9px 1px rgba(117, 104, 117, 0.45);
+      -moz-box-shadow: -1px 6px 9px 1px rgba(117, 104, 117, 0.45);
+      box-shadow: -1px 6px 9px 1px rgba(117, 104, 117, 0.45);
+      h3 {
+        margin: 15px 0;
+        padding: 0;
+        font-weight: normal;
+        line-height: 33px;
+        font-size: $font-size-heading;
+        color: $color-primary;
+      }
+      p {
+        margin: 10px 0 20px 0;
+      }
+      .more-link {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: $font-size-link;
+        color: $color-primary;
+      }
+    }
+
+    // Dark theme
+    .post-content.dark {
+      h3,
+      p,
+      .more-link {
+        color: #fff !important;
+      }
+    }
+  }
+}
