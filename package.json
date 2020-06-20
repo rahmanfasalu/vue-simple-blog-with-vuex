@@ -1,5 +1,6 @@
 {
   "name": "test-vuetify",
+  "homepage": "/vue-simple-blog-with-vuex/",
   "version": "0.1.0",
   "private": true,
   "scripts": {

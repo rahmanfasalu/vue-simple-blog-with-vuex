@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: "/vue-simple-blog-with-vuex/",
   css: {
     loaderOptions: {
       sass: {
